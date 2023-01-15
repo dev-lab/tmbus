@@ -3,7 +3,7 @@
 ## Description
 [M-Bus](https://m-bus.com/) is a standard for remote reading of consumption meters (e.g. water, heat, electricity meters, etc.). As of today, the standard is maintained by [OMS-Group](https://oms-group.org/en/), and evolved to support other device types, including sensors, detectors, controllers, etc.
 
-A data frame sent over M-Bus from one device to another is called a **datagram** (it is also referred as a **telegram** in M-Bus protocol specification). The main purpose of the **tmbus** JavaScript (ES5) library is to decode M-Bus datagrams from M-Bus meters. The library is created primarily for [embedded device](https://dev-lab.github.com/esp-iot-mbus)s with limited storage, but despite its compactness, it is capable of decoding all data from consumption meters.
+A data frame sent over M-Bus from one device to another is called a **datagram** (it is also referred as a **telegram** in M-Bus protocol specification). The main purpose of the **tmbus** JavaScript (ES5) library is to decode M-Bus datagrams from M-Bus meters. The library is created primarily for [embedded device](https://github.com/dev-lab/esp-iot-mbus)s with limited storage, but despite its compactness, it is capable of decoding all data from consumption meters.
 
 ## Features
 * Can parse M-Bus datagrams according to [M-Bus rev. 4.8 specification](https://m-bus.com/assets/downloads/MBDOC48.PDF).
@@ -399,7 +399,7 @@ Result:
 ```
 
 ## Use cases:
-* [M-Bus gateway with web server based on ESP8266 NodeMCU](https://dev-lab.github.com/esp-iot-mbus)
+* [M-Bus gateway with web server based on ESP8266 NodeMCU](https://github.com/dev-lab/esp-iot-mbus)
 * [Live M-Bus datagram decoder](https://dev-lab.github.io/tmbus/tmbus.htm)
 
 ## [License](./LICENSE)
