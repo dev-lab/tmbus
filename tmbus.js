@@ -101,7 +101,7 @@ function ba2hs(a, s) {
 
 function ba2i(a) {
 	var i = ln(a);
-	if(i > 4) return a;
+	if(!i || i > 4) return i ? a : 0;
 	var r = a[--i], m = i == 3 ? 0 : r&128 ? (r&=127, -(1<<i*8+7)) : 0;
 	while(i) r = (r<<8) + a[--i];
 	return r + m;
