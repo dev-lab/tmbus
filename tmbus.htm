@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3TNM6DDWPG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3TNM6DDWPG');
+</script>
 <!-- Copyright (c) 2023 Taras Greben <taras.greben@gmail.com>. All rights Reserved. -->
 <meta charset=utf-8>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,9 +29,9 @@ th {background:#1e90ff; color:white}
 .header {
 	display: flex;
 	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
+	top: 0.2rem;
+	left: 0.2rem;
+	right: 0.2rem;
 	width: 100%;
 	height: 4rem;
 	overflow: hidden;
@@ -50,10 +59,10 @@ th {background:#1e90ff; color:white}
 	width: 100%;
 	height: 1rem;
 	text-align: center;
-	font-size: 0.72rem;
+	font-size: 0.8rem;
 }
 @keyframes spin {0% {transform: rotate(0deg)} 100% {transform: rotate(360deg)}}
-@media only screen and (max-width:30rem) {body {margin:0} .main {padding-right:0}}
+@media only screen and (max-width:30rem) {body {margin:0.2rem} .main {padding-right:0.2rem}}
 </style>
 <title>Live M-Bus datagram decoder</title>
 <script src="tmbus.min.js"></script>
@@ -301,7 +310,7 @@ but despite its compactness, it is capable of decoding all data from consumption
 <input type="radio" class="radio" name="mbusFormat" value="plain" id="plain" onclick="refresh();"/>
 <label for="plain">Raw</label>
 <section>
-<div id="ld">
+<div id="ld" style="display:none">
 </div>
 <div id="cmds">
 </div>
