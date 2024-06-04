@@ -488,7 +488,7 @@ function deVifB(v, d) {
 	[[65, -3, 34], [65, -3, 16]],
 	[66, -3, 10]];
 	var b = m[t], i = 2;
-	for(; isA(b[0]); n &= 0xF^1<<i, b = d>>i--&1 ? (ln(b) < 1 ? O : b[1]) : b[0]);
+	for(; isA(b[0]); n &= 0xF^1<<i, b = d>>i--&1 ? (ln(b) < 2 ? O : b[1]) : b[0]);
 	deV(v, b, n);
 }
 
