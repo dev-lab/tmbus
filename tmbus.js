@@ -26,7 +26,7 @@ function p10(n, e) {
 		var i = parseInt(n);
 		if(n !== i) return isNaN(i) ? n : n * Math.pow(10, e);
 	}
-	var t = "" + n, b = (s ? s.charAt(0) == "-" : n < 0) ? 1 : 0, l = ln(t);
+	var t = "" + n, b = (s ? t[0] == "-" : n < 0) ? 1 : 0, l = ln(t);
 	if(e > 0) t += sNc("0", e);
 	else {
 		e += l - b;
@@ -588,7 +588,7 @@ function rv(v) {
 		if(v.f) t = v.f(t);
 		m = Array.isArray(t);
 		if(m) t = ha2si(t);
-		if(s) t = m ? (t.charAt(0) == "-" ? t.slice(1) : ("-" + t)): -t;
+		if(s) t = m ? (t[0] == "-" ? t.slice(1) : ("-" + t)): -t;
 		if(v.e) t = p10(t, v.e);
 	}
 	v.value = t;
