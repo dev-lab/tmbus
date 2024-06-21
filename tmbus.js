@@ -518,10 +518,10 @@ function deVife(v, d) {
 	: d < 0x60 ? D + f + " " + w + L + ", " + U[t&3]
 	: d < 0x68 ? D + f + ", " + U[t&3]
 	: d < 0x70 ? (t&2 ? "Date (/time) of " + f + " " + b : e)
-	: d < 0x78 ? (v.e = t - 6, e)
+	: d < 0x78 ? (v.e = (v.e || 0) + t - 6, e)
 	: d < 0x7C ? "Additive correction constant: 10E" + (t - 3) + "*" + v.type + " (offset)"
 	: d < 0x7D ? e
-	: d < 0x7E ? (v.e = 3, e)
+	: d < 0x7E ? (v.e = (v.e || 0) + 3, e)
 	: ["future value", MS + " data next"][t&1];
 	if(e) v.typeE.push(e);
 }
